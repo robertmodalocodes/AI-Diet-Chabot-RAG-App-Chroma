@@ -39,6 +39,14 @@ It utilizes Google's Gemini model for conversational AI and response generation,
 **1. Get API Key:**
 
 - Obtain an API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+- Head to .streamlit/secrets.toml.example and rename it to secrets.toml.
+- Add your API key to the secrets.toml file (replace "YOUR_GOOGLE_API_KEY" with your actual API key):
+
+  ```bash
+  GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
+  ```
+
+- If deployed on Streamlit Cloud, add the secret under App Settings > Secrets.
 
 **2. Clone Repository (Optional):**
 
