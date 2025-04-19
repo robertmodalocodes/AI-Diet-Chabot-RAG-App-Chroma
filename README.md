@@ -21,7 +21,7 @@ It utilizes Google's Gemini model for conversational AI and response generation,
 - **Specific Suggestions:** Aims to provide lists of recommended fruits, vegetables, proteins, and simple recipe ideas based on retrieved context.
 - **Conversational Flow:** Engages in a basic follow-up conversation if the user wishes to discuss further.
 - **Persona:** Instructed to act like a helpful "personal diet planner".
-- **Kaggle Notebook:** Includes a Jupyter notebook (`diet_chatbot_rag_build.ipynb`) designed to run on Kaggle, demonstrating the core logic.
+- **Kaggle Notebook:** Includes a Jupyter notebook (`diet_chatbot_rag_build_v25.ipynb`) designed to run on Kaggle, demonstrating the core logic.
 - **Streamlit App:** Includes a Python script (`diet_chatbot_app.py`) to deploy the chatbot as an interactive web application using Streamlit.
 
 ## How it Works
@@ -31,7 +31,7 @@ It utilizes Google's Gemini model for conversational AI and response generation,
 3. **Vector Store:** These embeddings and the corresponding text documents are stored in a ChromaDB collection (in-memory for simplicity).
 4. **User Query:** When the user provides their health condition, their query is also embedded.
 5. **Retrieval:** ChromaDB is queried to find the documents in the knowledge base whose embeddings are most similar (semantically) to the user's query embedding.
-6. **Generation:** The user's query and the retrieved documents (context) are fed into the Gemini Pro model with a specific prompt instructing it to act as a meal planner and generate recommendations based _only_ on the provided context.
+6. **Generation:** The user's query and the retrieved documents (context) are fed into the Gemini (`gemini-2.0-flash`) model with a specific prompt instructing it to act as a meal planner and generate recommendations based _only_ on the provided context.
 7. **Interaction:** The Streamlit app manages the chat interface, state (like whether a recommendation has been given), and the follow-up conversation loop.
 
 ## Setup and Running
