@@ -1,5 +1,9 @@
-# app.py
+# Import libraries
+# Fixed incompatibility with chromadb on streamlit cloud
 import sys
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# import sqlite3
 import streamlit as st
 import google.generativeai as genai_default
 import chromadb
@@ -7,10 +11,6 @@ import pandas as pd
 import os
 import time
 from diet_data import DIET_DOCUMENTS  # Import from the separate file
-# Fixed incompatibility with chromadb on streamlit cloud
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-# import sqlite3
 
 # --- Streamlit App UI and Logic ---
 
