@@ -174,3 +174,4 @@ cython_debug/
 .pypirc
 .streamlit/secrets.toml
 .DS_Store
+diet_chatbot_app.py
