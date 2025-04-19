@@ -3,7 +3,7 @@
 import sys
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-# import sqlite3
+import sqlite3
 import streamlit as st
 import google.generativeai as genai_default
 import chromadb
