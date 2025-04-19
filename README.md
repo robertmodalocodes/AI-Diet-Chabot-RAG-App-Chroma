@@ -2,7 +2,12 @@
 
 ## Google Gen AI Intensive Course Capstone 2025Q1
 
-This capstone project is a part of 5-day Gen AI Intensive Course with Google and Kaggle held in March 2025. The course was designed to help participants learn about the latest advancements in AI and how to apply them in real-world scenarios. This project showcases the use of Google's Gemini model for conversational AI, along with a Retrieval-Augmented Generation (RAG) approach. This project is a simple AI chatbot designed to act like a friendly personal meal planner. The chatbot is designed to provide dietary suggestions based on specific health conditions, such as high blood pressure or back pain. It retrieves relevant information from a knowledge base and generates responses using the Gemini model, ensuring that the recommendations are tailored to the user's needs.
+This capstone project is a part of 5-day Gen AI Intensive Course with Google and Kaggle held in March 2025. The course was designed to help participants learn about the latest advancements in AI and how to apply them in real-world scenarios.
+
+**Problem defenition**
+Based on personal experience. Health education in my country is extremely limited to nonexistent. People are often discharged from hospitals with medication but little to no guidance on how diet and lifestyle can support recovery. There is a lack of accessible tools that guide people in using food as a complementary therapy. This gap inspired this project to develop of an AI chatbot that recommends personalized dietary strategies based on current health conditions, aiming to support healing, improve outcomes, and minimize excessive and unnecessary use of generic drugs.
+
+The chatbot is designed to provide dietary suggestions based on specific health conditions, such as high blood pressure or back pain. It retrieves relevant information from a knowledge base and generates responses using the Gemini model, ensuring that the recommendations are tailored to the user's needs.
 
 It utilizes Google's Gemini model for conversational AI and response generation, combined with a Retrieval-Augmented Generation (RAG) approach. A basic knowledge base of dietary information is embedded and stored in a ChromaDB vector database for efficient retrieval.
 

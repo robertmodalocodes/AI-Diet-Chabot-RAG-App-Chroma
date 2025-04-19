@@ -172,6 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Others
 .streamlit/secrets.toml
 .DS_Store
 diet_chatbot_app.py
+diet_chatbot_rag_build_v22
