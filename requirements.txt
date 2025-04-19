@@ -1,0 +1,7 @@
+google-generativeai
+chromadb
+streamlit
+pandas
+numpy
+watchdog
+python-dotenv # Good practice, though Streamlit uses secrets
