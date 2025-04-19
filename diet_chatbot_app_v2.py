@@ -1,4 +1,5 @@
 # app.py
+import sys
 import streamlit as st
 import google.generativeai as genai_default
 import chromadb
@@ -6,15 +7,10 @@ import pandas as pd
 import os
 import time
 from diet_data import DIET_DOCUMENTS  # Import from the separate file
-# Fixed incompatibility with chromadb
-from chromadb import Client
-from chromadb.config import Settings
-
-client = Client(Settings(
-    chroma_db_impl="duckdb+parquet",  # ← Avoids sqlite!
-    persist_directory=".chroma"       # optional path
-))
-
+# Fixed incompatibility with chromadb on streamlit cloud
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# import sqlite3
 
 # --- Streamlit App UI and Logic ---
 
@@ -58,8 +54,8 @@ def load_models():
 @st.cache_resource
 def setup_chromadb():
     """Sets up and caches the ChromaDB client and collection, embedding documents."""
-    # client = chromadb.Client()  # In-memory client
-    client = client
+    client = chromadb.Client()  # In-memory client
+
     DB_COLLECTION_NAME = "diet_recommendations_streamlit"
 
     # Check if collection exists, if so, use it, otherwise create and populate

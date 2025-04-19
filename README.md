@@ -126,7 +126,7 @@ Get responses from the chatbot in real-time!
 ## Files
 
 - diet_chatbot_rag_build.ipynb: Jupyter Notebook for development and Kaggle execution. (Check out the [Kaggle](https://www.kaggle.com/code/peterjordanson10/condition-based-diet-recommender-rag) version of the notebook)
-- diet_chatbot_app.py: Python script for the Streamlit web application.
+- diet_chatbot_app_v2.py: Python script for the Streamlit web application.
 - diet_data.py: Contains the sample knowledge base documents.
 - requirements.txt: Lists Python package dependencies.
 - README.md: This file.
