@@ -11,7 +11,7 @@ It utilizes Google's Gemini model for conversational AI and response generation,
 
 **Disclaimer:** This tool provides general information based on its knowledge base and AI generation. **It is NOT a substitute for professional medical or dietary advice.** Always consult with a qualified healthcare provider or registered dietitian for personalized recommendations specific to your health situation.
 
-## Generative AI Techniques implemented in this project:
+## Generative AI Techniques implemented in this project
 
 - Structured output/JSON mode/controlled generation
 - Few-shot prompting
