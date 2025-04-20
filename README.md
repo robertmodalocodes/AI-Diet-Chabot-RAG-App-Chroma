@@ -5,13 +5,19 @@
 This capstone project is a part of 5-day Gen AI Intensive Course with Google and Kaggle held in March 2025. The course was designed to help participants learn about the latest advancements in AI and how to apply them in real-world scenarios.
 
 **Problem defenition**
-Based on personal experience. Health education in my country is extremely limited to nonexistent. People are often discharged from hospitals with medication but little to no guidance on how diet and lifestyle can support recovery. There is a lack of accessible tools that guide people in using food as a complementary therapy. This gap inspired this project to develop of an AI chatbot that recommends personalized dietary strategies based on current health conditions, aiming to support healing, improve outcomes, and minimize excessive and unnecessary use of generic drugs.
-
-The chatbot is designed to provide dietary suggestions based on specific health conditions, such as high blood pressure or back pain. It retrieves relevant information from a knowledge base and generates responses using the Gemini model, ensuring that the recommendations are tailored to the user's needs.
+Personal health education and awareness is often limited or nonexistent in many areas. People are often discharged from hospitals with medication but little to no guidance on how diet and lifestyle can support recovery. There is a lack of accessible tools that guide people in using food as a complementary therapy. This gap inspired this project which is to develop an AI chatbot that recommends personalized dietary strategies based on current health conditions. Acting like a friendly personal diet planner, the chatbot retrieves relevant information from a knowledge base and generates responses using the Gemini model, ensuring that the recommendations are tailored to the user's needs.
 
 It utilizes Google's Gemini model for conversational AI and response generation, combined with a Retrieval-Augmented Generation (RAG) approach. A basic knowledge base of dietary information is embedded and stored in a ChromaDB vector database for efficient retrieval.
 
 **Disclaimer:** This tool provides general information based on its knowledge base and AI generation. **It is NOT a substitute for professional medical or dietary advice.** Always consult with a qualified healthcare provider or registered dietitian for personalized recommendations specific to your health situation.
+
+## Generative AI Techniques implemented in this project:
+
+- Structured output/JSON mode/controlled generation
+- Few-shot prompting
+- Embeddings
+- Retrieval augmented generation (RAG)
+- Vector search/vector store/vector database
 
 ## Features
 
@@ -94,7 +100,7 @@ The notebook and script can load this using python-dotenv if secrets aren't avai
 
 - Streamlit App:
 
-  - Make sure diet_chatbot_app.py, diet_data.py, and requirements.txt are in the same directory.
+  - Make sure diet_chatbot_app_v2.py, diet_data.py, and requirements.txt are in the same directory.
   - Ensure your API key is configured (preferably via `.streamlit/secrets.toml`).
   - Run the app from your terminal:
 
@@ -160,6 +166,12 @@ Play around and tinker with your own version of this RAG app by forking this rep
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Links to external sources
+
+- [Medium post](https://medium.com/@robertmodalo2/simple-ai-diet-recommender-chatbot-using-googles-gemini-an-implementation-of-0486a4d35eac)
+- [Streamlit app](https://ai-diet-chabot-rag-app-chroma-bkg3hh5wvkup5hazmekch2.streamlit.app/)
+- [Kaggle notebook](https://www.kaggle.com/code/peterjordanson10/condition-based-diet-recommender-rag)
 
 ## Contact
 
