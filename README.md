@@ -178,3 +178,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [LinkedIn](https://www.linkedin.com/in/robert-modalo-78b97580)
 - [Medium](https://medium.com/@robertmodalo2)
 - [GitHub](https://github.com/robertmodalocodes)
+- [Kaggle](https://www.kaggle.com/peterjordanson10)
