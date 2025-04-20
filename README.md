@@ -105,7 +105,7 @@ The notebook and script can load this using python-dotenv if secrets aren't avai
   - Run the app from your terminal:
 
     ```bash
-    streamlit run diet_chatbot_app.py
+    streamlit run diet_chatbot_app_v2.py
     ```
 
   - Access the app in your web browser through the URL provided by Streamlit (usually <http://localhost:8501>).
